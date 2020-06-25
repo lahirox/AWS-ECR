@@ -15,5 +15,5 @@ workflows:
           path: ./testproject
           profile-name: circleci
           region: AWS_REGION_ENV_VAR_NAME
-          repo: myECRRepository
+          repo: mytestcicd
           tag: 'latest,myECRRepoTag'
