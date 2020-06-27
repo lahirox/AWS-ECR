@@ -16,4 +16,4 @@ workflows:
           profile-name: circleci
           region: AWS_REGION_ENV_VAR_NAME
           repo: mytestcicd
-          tag: 'latest,myECRRepoTag'
+          tag: '${CIRCLE_SHA1}'
