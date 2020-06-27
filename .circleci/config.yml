@@ -18,5 +18,3 @@ workflows:
           region: AWS_REGION_ENV_VAR_NAME
           repo: mytestcicd
           tag: '${CIRCLE_SHA1}'
-     - aws-ecs/update-task-definition-from-json:
-              task-definition-json: my-app-definition.json
