@@ -1,5 +1,6 @@
 orbs:
   aws-ecr: circleci/aws-ecr@6.9.1
+  aws-ecs: circleci/aws-ecs@1.0.5
 version: 2.1
 workflows:
   build_and_push_image:
@@ -17,5 +18,5 @@ workflows:
           region: AWS_REGION_ENV_VAR_NAME
           repo: mytestcicd
           tag: '${CIRCLE_SHA1}'
-      - aws-ecs/update-task-definition-from-json:
-          task-definition-json: my-app-definition.json
+     - aws-ecs/update-task-definition-from-json:
+              task-definition-json: my-app-definition.json
